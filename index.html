@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EasyTranslate</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="logo">🌐</div>
+
+        <h1>EasyTranslate</h1>
+
+        <p class="subtitle">
+            Translate your text quickly and easily
+        </p>
+
+    </header>
+
+
+    <main class="translator-container">
+
+
+        <!-- INPUT BOX -->
+
+        <div class="language-box">
+
+            <div class="box-header">
+
+                <select id="fromLanguage">
+
+                    <option value="en">English</option>
+                    <option value="ur">Urdu</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ar">Arabic</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="es">Spanish</option>
+                    <option value="zh">Chinese</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="it">Italian</option>
+                    <option value="pt">Portuguese</option>
+
+                </select>
+
+            </div>
+
+
+            <textarea
+                id="inputText"
+                maxlength="5000"
+                placeholder="Enter your text here..."
+            ></textarea>
+
+
+            <div class="bottom-info">
+
+                <span id="characterCount">
+                    0 / 5000
+                </span>
+
+
+                <div class="small-buttons">
+
+                    <button id="voiceButton" title="Speak">
+
+                        🎤 Voice
+
+                    </button>
+
+
+                    <button id="clearButton">
+
+                        Clear
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SWAP BUTTON -->
+
+        <div class="swap-area">
+
+            <button id="swapButton" title="Swap languages">
+
+                ⇄
+
+            </button>
+
+        </div>
+
+
+
+        <!-- OUTPUT BOX -->
+
+        <div class="language-box">
+
+            <div class="box-header">
+
+                <select id="toLanguage">
+
+                    <option value="ur">Urdu</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ar">Arabic</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="es">Spanish</option>
+                    <option value="zh">Chinese</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="it">Italian</option>
+                    <option value="pt">Portuguese</option>
+
+                </select>
+
+            </div>
+
+
+            <textarea
+                id="outputText"
+                placeholder="Translation will appear here..."
+                readonly
+            ></textarea>
+
+
+            <div class="bottom-info">
+
+                <span>
+                    Translation
+                </span>
+
+
+                <div class="small-buttons">
+
+                    <button id="listenButton">
+
+                        🔊 Listen
+
+                    </button>
+
+
+                    <button id="copyButton">
+
+                        Copy
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- TRANSLATE BUTTON -->
+
+    <button id="translateButton">
+
+        Translate
+
+    </button>
+
+
+    <p id="statusMessage"></p>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>EasyTranslate</p>
+
+        <p>Supports 12 languages</p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
